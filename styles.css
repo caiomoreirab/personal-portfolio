@@ -304,7 +304,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 90px;
-    margin-left: 470px;
+    margin-left: 530px;
 
 }
 
@@ -313,7 +313,7 @@ header {
     height: 200px;
     left: 1px;
     padding: 17px;
-    margin-top: -1735px;
+    margin-top: -185px;
     margin-left: 439px;
     position: absolute;
     z-index: 9999;
@@ -329,8 +329,8 @@ header {
     align-items: center;
     text-align: justify;
     padding: 12px;
-    margin-left: 350px;
-    margin-top: -0px;
+    margin-left: 422px;
+    margin-top: -8px;
     
 }
 
@@ -355,6 +355,8 @@ header {
     text-decoration: none;
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-left: 900px;
 }
 
 
@@ -363,7 +365,7 @@ header {
     height: 250px; /* Adicionei uma altura para exemplificar */
     position: absolute;
     border-radius: 45px;
-    top: 450px;
+    top: 470px;
     left: 200px;
     padding: 20px;
     z-index: 1; 
@@ -373,7 +375,7 @@ header {
 
 .texto--projeto2 {
     align-items: center;
-    margin-top: 430px;
+    margin-top: -5px;
     font-size: 30px;
     font-family: "Do Hyeon", sans-serif;
     width: 545px;
@@ -383,8 +385,9 @@ header {
     align-items: center;
     text-align: justify;
     padding: 12px;
-    position: absolute;
-    padding: 580px;
+    position: relative;
+    margin-left: 1100px;
+
 
 }
 
@@ -395,14 +398,15 @@ header {
     font-family: "Do Hyeon", sans-serif;
     width:fit-content;
     height: fit-content;
-    margin-left: 19px;
     letter-spacing: 2px;
     padding: 5px;
     background: rgb(249, 85, 255);
     background: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 90px auto;
+    margin: 0px auto;
+    margin-left: 1175px;
+    margin-top: 420px;
 
 
 
@@ -431,4 +435,26 @@ header {
     text-decoration: none;
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
+}
+
+/* .gitlogo2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 820px;
+    width: 85px;
+    height: 85px;
+    padding: 10px;
+
+} */
+
+.linha--vertical3 {
+    width: 200px;
+    height: 200px;
+    left: 1px;
+    padding: 17px;
+    margin-top: 600px;
+    margin-left: 439px;
+    position: absolute;
+    z-index: 9999;
 }
