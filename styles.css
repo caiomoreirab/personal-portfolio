@@ -49,9 +49,14 @@ header {
     margin-right: 24px;
     text-align: center;
     text-align: justify;
+    cursor: pointer;
+    position: relative;
 
 }
-
+.menu {
+    position: absolute;
+    z-index: 2;
+}
 .centro {
     display: flex;
     flex-direction: column;
@@ -63,6 +68,7 @@ header {
     text-align: center;
     position: relative;
     z-index: 1;
+    transition: 0.6s;
     
     
 }
@@ -78,7 +84,8 @@ header {
     background: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-
+    transition: 0.5s;
+    cursor: pointer;
 }
  
     
@@ -95,6 +102,8 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 2px;
+    transition: 0.5s;
+    cursor: pointer;
 
 }
 
@@ -111,30 +120,41 @@ header {
     border-radius: 5px;
     padding: 17px;
     margin-left: 23px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .foto--caio {
     width: 500px;
-    float: left;
-    margin-right: 10px;
     position: absolute; 
     top: 0px;
     left: 30px;
     margin-left: 700px;
-    
-       
+    transition: transform 0.3s;
+    animation: flutuar 4s infinite;
+    transition: 0.7s;
+    z-index: 1;
 }
+
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
 .botoes {
     display: flex;
     align-items: center;
     margin-left: 320px;
     margin-top: 16px;
+    transition: 0.3s;
 
 }
 
 .estilos--botoes img {
     max-width: 40px;
     padding: 10px;
+    transition: 0.3s;
 }
 
 
@@ -145,6 +165,7 @@ header {
     margin-top: -104px;
     position: absolute;
     z-index: 9999;
+    transition: 0.5s;
 }
 .centro2 {
     display: flex;
@@ -172,6 +193,9 @@ header {
     left: 10px;
     margin-left: 80px;
     margin-top: 40px;
+    transition: transform 0.3s;
+    animation: flutuar 4s infinite;
+    transition: 0.4s;
 }
 
 .titulo2 {
@@ -184,6 +208,9 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 46px;
+    transition: 0.5s;
+    cursor: pointer;
+    
 
 }
 
@@ -194,11 +221,13 @@ header {
     height:fit-content;
     left: 1px;
     letter-spacing: 2px;
-    text-align: justify;
+    text-align: left;
     padding: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
     margin-left: 100px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .botoes2 {
@@ -224,14 +253,14 @@ header {
     left: 740px;
 }
 
-
-
 .icones {
     max-width: 85px;
     max-height: 85px;
     margin: 10px;
     margin-bottom: 15px;
     border-radius: 4px;
+    transition: 0.6s;
+    
 }
 
 .linha2 {
@@ -242,7 +271,6 @@ header {
     top: 415px;
     left: 740px;
 }
-
 
 .centro3 {
     display: flex;
@@ -257,8 +285,81 @@ header {
     text-align: center;
     justify-content: center;
     position: relative;
-    z-index: 1;    
-  
+    z-index: 1;     
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    padding: 4em 3em 0 3em;
+}
+
+.projetos__conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos__conteudo__retangulo{
+    margin-top: 1px;
+    background-color: white;
+    margin-left: 10em;
+    margin-right: 2em;
+    width: 0.8em;
+    height: 15em;
+    background:linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
+    
+}
+
+.projetos__conteudo__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.git--text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: fit-content;
+    border-radius: 18px;
+    background:linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin-bottom: 80px;
+    transition: 0.4s;
+}
+.git--text:hover { 
+    transform: scale(1.1);
+}
+
+.text--git2 {
+    color: black;
+    font-size: 25px;
+    font-family:"Days One", sans-serif;;
+    letter-spacing: 0px;
+    transition: 0.4s;
+    cursor: pointer;
+    margin: 0;
+}
+
+.icone--git7 {
+    width: 75px;
+    height: 75px;
+    margin-right: 25px;
+    margin-left: 10px; 
 }
 
 .titulo3 {
@@ -276,62 +377,63 @@ header {
 
 }
 
-
-
 .projeto1 {
-    width: 250px;
-    height: 250px; /* Adicionei uma altura para exemplificar */
-    position: absolute;
-    border-radius: 45px;
-    top: 100px;
-    left: 200px;
-    padding: 20px;
-    z-index: 1; 
-    border: solid 2px white;
+    width: 270px;
+    height: 270px;
+    padding: 8px;
+    border: solid 4px transparent; /* Define a borda inicialmente transparente */
+    border-image: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
+    border-image-slice: 1; /* Define como a borda é dividida */
+    transition: 0.4s;
 }
 
+.projeto1:hover{
+    padding: 0;
+    width: 290px;
+    height: 290px;
+    padding: 0;
+    transition: 0.5s ease-in-out;
+}
 
 .sub--titulo3 {
     font-size: 45px;
     font-family: "Do Hyeon", sans-serif;
     width:fit-content;
     height: fit-content;
-    margin-left: 19px;
     letter-spacing: 2px;
-    padding: 5px;
+    padding: 0px;
     background: rgb(249, 85, 255);
     background: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 90px;
-    margin-left: 530px;
-
+    transition: 0.4s;
+    z-index: 55;
+    cursor: pointer;
+    z-index: 8;
+    position: relative;
 }
 
-.linha--vertical2 {
-    width: 200px;
-    height: 200px;
-    left: 1px;
-    padding: 17px;
-    margin-top: -185px;
-    margin-left: 439px;
-    position: absolute;
-    z-index: 9999;
+.sub--titulo3:hover {
+    font-size: 55px;
 }
+.sub--titulo4:hover {
+    font-size: 55px;
+}
+
 
 .texto--projeto {
+    color: white;
     font-size: 30px;
     font-family: "Do Hyeon", sans-serif;
     width: 545px;
     height:fit-content;
-    left: 1px;
     letter-spacing: 1px;
     align-items: center;
     text-align: justify;
     padding: 12px;
-    margin-left: 422px;
-    margin-top: -8px;
-    
+    transition: 0.4s;
+    position: relative;
+    z-index: 5;    
 }
 
 .projeto-link {
@@ -359,19 +461,28 @@ header {
     margin-left: 900px;
 }
 
-
 .projeto2 {
-    width: 250px;
-    height: 250px; /* Adicionei uma altura para exemplificar */
-    position: absolute;
-    border-radius: 45px;
+    width: 270px;
+    height: 270px; 
+    padding: 8px;
+    position: absolute;;
     top: 470px;
     left: 200px;
-    padding: 20px;
-    z-index: 1; 
-    border: solid 2px white;
+    border: solid 4px transparent;
+    border-image: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
+    border-image-slice: 1;
+    transition: 0.4s;
+    cursor: pointer;
+    z-index: 4;
 }
 
+.projeto2:hover{
+    padding: 0;
+    width: 290px;
+    height: 290px;
+    padding: 0;
+    transition: 0.5s ease-in-out;
+}
 
 .texto--projeto2 {
     align-items: center;
@@ -387,13 +498,11 @@ header {
     padding: 12px;
     position: relative;
     margin-left: 1100px;
-
-
+    transition: 0.4s;
+    cursor: pointer;
 }
 
-
 .sub--titulo4 {
-
     font-size: 45px;
     font-family: "Do Hyeon", sans-serif;
     width:fit-content;
@@ -404,14 +513,10 @@ header {
     background: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 0px auto;
     margin-left: 1175px;
     margin-top: 420px;
-
-
-
-
-
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 .centro4 {
@@ -423,12 +528,10 @@ header {
     text-align: justify;
     margin-left: -672px;
     margin-top: 464px;
-
     text-align: center;
     justify-content: center;
     position: absolute;
     z-index: 1;    
-  
 }
 
 .confira2 {
@@ -437,24 +540,139 @@ header {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* .gitlogo2 {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    margin-top: 820px;
-    width: 85px;
-    height: 85px;
+.titulo:hover {
+    font-size: 72px;
+}
+
+.sub--titulo:hover {
+    font-size: 44px;
+}
+
+.descricao:hover {
+    font-size: 25px;
+    text-align:left;
+}
+
+.estilos--botoes img:hover {
+    max-width: 60px;
     padding: 10px;
+}
+
+.foto--caio:hover {
+    width: 550px;
+    position: absolute; 
+    top: 0px;
+    left: 30px;
+    margin-left: 680px;
+    animation: flutuar 3s infinite;
+}
+
+
+/* .habilidades:hover {
+    width: 120%;
 
 } */
 
-.linha--vertical3 {
-    width: 200px;
-    height: 200px;
-    left: 1px;
-    padding: 17px;
-    margin-top: 600px;
-    margin-left: 439px;
-    position: absolute;
-    z-index: 9999;
+.icones:hover {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    opacity: 0;
 }
+
+.icones {
+    max-width: 85px;
+    max-height: 85px;
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    transition: 0.6s;
+    position: relative;
+    cursor: pointer;
+}
+
+.texto-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s;
+    color: white;
+    font-size: 25px;
+    font-family: "Days One", sans-serif;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.icone-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.icone-wrapper:hover .texto-hover {
+    opacity: 1;
+}
+
+.titulo2:hover {
+    font-size: 72px;
+}
+
+.descricao2:hover {
+    font-size: 18px;
+    text-align:unset;
+}
+
+.foto--caio2:hover {
+    width: 630px;
+    position: absolute; 
+}
+
+/* .texto--menu:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
+} */
+
+.texto--projeto:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.texto--projeto2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.texto--menu.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
+}
+
+.texto--menu:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
+}
+
+
