@@ -57,6 +57,16 @@ header {
     position: absolute;
     z-index: 2;
 }
+ /* Estilos da Logo CM */
+.logo-cm {
+        position: absolute;
+        top: 26px; 
+        left: 155px; 
+        width: 65px;
+        height: auto; 
+        z-index: 1; 
+}
+
 .centro {
     display: flex;
     flex-direction: column;
