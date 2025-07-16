@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi,I'm Caio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
     <link rel="icon" href="assets/Vector (9).svg" type="image/x-icon">
-
-
 </head>
-
 <body>
-
-   <header>    
+    <header>    
         <a href="index.html"><img class="logo-cm" src="assets/Vector (8).svg" alt="Logo Caio"></a>
+        
+        <button class="menu-hamburger" aria-label="Abrir Menu">
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+        </button>
+
         <nav class="menu">
             <a href="index.html" class="texto--menu">Home</a>
             <a href="habilidades.html" class="texto--menu">Habilidades</a>
             <a href="sobre.html" class="texto--menu">Projetos</a>
-         </nav>  
-        <nav>  
+        </nav>  
     </header>
 
     <main class="projetos">
-
         <div class="projetos__conteudo">
             <a href="https://github.com/caiomoreirab/python-hangman-game-pygame.git"><img class="projeto1 projetos__conteudo__img" src="assets/forca 1.png" alt=""></a>
             <label class="projetos__conteudo__retangulo"></label>
@@ -55,14 +56,13 @@
             <label class="projetos__conteudo__retangulo"></label>
             <div class="projetos__conteudo__texto">
                 <h2 class="projetos__conteudo__texto__titulo sub--titulo3"> Scouts e Analises</h2>
-                <p class="projetos__conteudo__texto__desc texto--projeto">                   
-                Analises de dados competitivos do cenario profissional de Clash Royale. 
-                Estatisticas, tendencias e insights sobre o competitivo do jogo, ajudando a compreender
-                estrategias e desempenhos de equipes e jogadores.
+                <p class="projetos__conteudo__texto__desc texto--projeto">                
+                    Analises de dados competitivos do cenario profissional de Clash Royale. 
+                    Estatisticas, tendencias e insights sobre o competitivo do jogo, ajudando a compreender
+                    estrategias e desempenhos de equipes e jogadores.
                 </p>
             </div>
         </div>
-
     </main>
 
     <footer class="projetos__footer"> 
@@ -74,7 +74,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-
 </html>

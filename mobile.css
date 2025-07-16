@@ -1,0 +1,331 @@
+/* --- Media Query para Mobile (max-width: 768px) --- */
+@media screen and (max-width: 768px) {
+
+    /* --- Variáveis CSS (Manter, se necessário) --- */
+    /* Se o seu arquivo styles.css original JÁ tiver essas variáveis definidas globalmente,
+       você pode remover este bloco ` :root { ... } ` daqui para evitar duplicação. */
+    :root {
+        --cor-primaria: #000;
+        --cor-secundaria: #fff;
+        --cor-gradiente-inicio: rgba(85, 208, 255, 1);
+        --cor-gradiente-meio: rgba(216, 116, 247, 1);
+        --cor-gradiente-fim: rgba(210, 74, 232, 1);
+        --fonte-titulo: "Do Hyeon", sans-serif;
+        --fonte-menu: "Days One", sans-serif;
+    }
+
+    /* --- Estilos para o Botão do Menu Hambúrguer (Mantidos, já estão bons) --- */
+    .menu-hamburger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1001;
+        position: relative;
+    }
+
+    .hamburger-icon {
+        display: block;
+        width: 40px;
+        height: 6px;
+        background-color: var(--cor-secundaria, #fff);
+        margin: 5px 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-hamburger.active .hamburger-icon:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-hamburger.active .hamburger-icon:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-hamburger.active .hamburger-icon:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* --- Estilos para o Header e Navegação (Menu Overlay) no Mobile (Refinados) --- */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 20px; /* Padding um pouco maior para respiro */
+        z-index: 1002;
+    }
+
+    .logo-cm {
+        width: 50px; /* Levemente menor para mobile */
+        position: static;
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 20px;
+        box-shadow: none;
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    }
+
+    .menu.active {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(0);
+    }
+
+    .texto--menu {
+        font-size: 22px; /* Ajustado para melhor leitura no overlay */
+        padding: 12px 0; /* Espaçamento entre os itens do menu */
+        width: fit-content;
+        text-align: center;
+    }
+
+    /* --- Ajustes Gerais para Páginas no Mobile --- */
+    body {
+        overflow-x: hidden; /* Garante que não haja barra de rolagem horizontal */
+    }
+
+    main {
+        flex-direction: column;
+        padding: 20px 15px; /* Padding horizontal um pouco menor para telas pequenas */
+        gap: 40px; /* Aumenta o espaçamento entre as seções principais */
+        align-items: center;
+        text-align: center; /* Centraliza o texto de toda a main por padrão */
+    }
+
+    /* --- Home Page (index.html) Ajustes --- */
+    .centro {
+        align-items: center; /* Centraliza o bloco de texto */
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        max-width: 95%; /* Ocupa quase toda a largura para texto */
+    }
+
+    .titulo {
+        font-size: 50px; /* Menor e mais adequado para mobile */
+        letter-spacing: 5px;
+        margin-left: 15px;
+
+    }
+
+    .sub--titulo {
+        font-size: 30px; /* Menor */
+        letter-spacing: 2px;
+        margin-top: -202px;
+        margin: -12px auto 0px auto; /* Mais espaçamento abaixo */
+        margin-left: 28px;
+    }
+
+    .descricao {
+        font-size: 19px; /* Ajustado para leitura */
+        width: 100%; /* Ocupa a largura máxima do centro */
+        padding: 15px;
+        margin: 0 auto; /* Remove margem superior excessiva, centraliza */
+        line-height: 1.5; /* Melhorar legibilidade */
+    }
+
+    .foto--caio {
+        width: 350px; /* Reduz o tamanho da foto para melhor encaixe */
+        position: static !important;
+        margin: 3px auto !important; /* Mais espaçamento */
+        animation: flutuar 3s infinite ease-in-out;
+        margin-top: -220px;
+    }
+
+    .linha--vertical {
+        display: none !important; /* Esconde a linha vertical */
+    }
+
+    .botoes {
+        margin-top: -85px; /* Mais espaço para os botões sociais */
+        justify-content: center;
+        margin-left: -5px;
+        gap: 20px; /* Mais espaço entre os ícones sociais */
+    }
+
+    .estilos--botoes img {
+        max-width: 35px; /* Ícones ligeiramente maiores para toque */
+        padding: 5px;
+    }
+
+    /* --- Página Habilidades (habilidades.html) Ajustes --- */
+    .centro2 {
+        margin: 20px 0 40px 0; /* Mais espaçamento inferior para o centro2 */
+        width: 100%;
+    }
+
+    .foto--caio2 {
+        width: 450px; /* Ajustado */
+        position: relative !important;
+        margin-left: -40px;
+        margin-top: -50px;
+    }
+
+    .titulo2 {
+        font-size: 50px; /* Ajustado */
+        margin: 0 auto 15px auto; /* Mais espaçamento abaixo */
+    }
+
+    .descricao2 {
+        font-size: 20px; /* Ajustado */
+        width: 90%;
+        margin: 0 auto; /* Centraliza e remove margem superior */
+        line-height: 1.5;
+    }
+
+    .habilidades, .linha2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        position: static !important;
+        margin: 30px 0 !important; /* Mais espaçamento */
+        gap: 20px; /* Aumenta o espaçamento entre os ícones */
+        width: 100%;
+        margin-left: -2220px;
+    }
+
+    .icone-wrapper {
+        width: 80px; /* Levemente maior para toque */
+        height: 80px;
+    }
+
+    .icones {
+        max-width: 70px; /* Ícones maiores */
+        max-height: 70px;
+        margin: 0; /* Centraliza dentro do wrapper */
+    }
+
+    .texto-hover {
+        font-size: 18px; /* Ajustado */
+    }
+
+    .analise {
+        margin: 60px auto 40px auto; /* Mais espaçamento antes e depois da seção */
+        width: 95%;
+        text-align: center;
+    }
+
+    .titulo5 {
+        font-size: 40px; /* Ajustado */
+        margin: 0 auto 20px auto; /* Mais espaçamento abaixo */
+        max-width: none;
+    }
+
+    .descricao5 {
+        font-size: 15px; /* Ajustado */
+        width: 100%; /* Ocupa a largura máxima do bloco */
+        padding: 0;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    .imgcbcr {
+        margin: 30px auto; /* Mais espaçamento */
+        width: 200px; /* Reduz a largura da imagem */
+        padding: 5px;
+        border-width: 3px;
+        padding-bottom: 200px;
+    }
+
+    .imgtitulo {
+        width: 200px;
+        padding: 5px;
+        border-width: 3px;
+    }
+
+    /* --- Página Projetos (sobre.html) Ajustes --- */
+    .projetos {
+        flex-direction: column;
+        gap: 4em; /* Mais espaçamento entre projetos */
+        padding: 2em 1em;
+        align-items: center;
+    }
+
+    .projetos__conteudo {
+        flex-direction: column;
+        gap: 25px; /* Espaçamento entre imagem e texto do projeto */
+    }
+
+    .projetos__conteudo__retangulo {
+        display: none !important;
+    }
+
+    .projetos__conteudo__img {
+        width: 200px; /* Tamanho ajustado da imagem do projeto */
+        height: 200px;
+        padding: 5px;
+        border-width: 3px;
+    }
+
+    .projetos__conteudo__texto {
+        align-items: center;
+        text-align: center;
+        margin-top: 0; /* Ajusta margem superior */
+        max-width: 90%;
+    }
+
+    .sub--titulo3 {
+        font-size: 40px; /* Ajustado */
+        padding: 0px;
+        margin-bottom: 10px; /* Mais espaçamento abaixo do título */
+    }
+
+    .texto--projeto {
+        font-size: 20px; /* Ajustado */
+        padding: 0; /* Remove padding lateral que pode atrapalhar */
+        text-align: center;
+        text-align: justify;
+        width: 300px;
+        line-height: 1.5;
+    }
+
+    .projetos__footer {
+        margin-top: -100px; /* Mais espaçamento para o footer */
+    }
+
+    .git--text {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px 10px;
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+    .text--git2 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .icone--git7 {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* --- Ajustes para Hovers (Mantidos, mas adaptados para mobile) --- */
+    .titulo:hover { font-size: 42px; }
+    .sub--titulo:hover { font-size: 30px; }
+    .descricao:hover { font-size: 16px; }
+    .estilos--botoes img:hover { transform: scale(1.1); }
+    .foto--caio:hover { width: 230px; }
+    .titulo2:hover { font-size: 42px; }
+    .descricao2:hover { font-size: 15px; }
+    .foto--caio2:hover { width: 230px; }
+    .texto--projeto:hover { transform: scale(1.02); }
+    .imgtitulo:hover { transform: scale(1.05); }
+    .sub--titulo3:hover { font-size: 30px; }
+    .git--text:hover { transform: scale(1.05); }
+}
