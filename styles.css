@@ -62,9 +62,10 @@ header {
         position: absolute;
         top: 26px; 
         left: 155px; 
-        width: 65px;
+        width: 75px;
         height: auto; 
         z-index: 1; 
+        margin-left: 78px;
 }
 
 .centro {
@@ -73,7 +74,7 @@ header {
     color: #fff;
     text-align: justify;
     margin-left: 130px;
-    margin-top: 65px;
+    margin-top: 95px;
     background-size: cover;
     text-align: center;
     position: relative;
@@ -84,9 +85,9 @@ header {
 }
 
 .titulo {
-    font-size: 65px;
+    font-size: 85px;
     font-family: "Do Hyeon", sans-serif;
-    width: 362px;
+    width: 452px;
     height: 56px;
     letter-spacing: 5px;
     padding: 8px;
@@ -96,22 +97,23 @@ header {
     -webkit-text-fill-color: transparent; */
     transition: 0.5s;
     cursor: pointer;
+    margin-left: 80px;
 }
  
     
 .sub--titulo {
-    font-size: 34px;
+    font-size: 55px;
     font-family: "Do Hyeon", sans-serif;
     width:fit-content;
     height: fit-content;
-    margin-left: 19px;
+    margin-left: 100px;
     letter-spacing: 7px;
     padding: 5px;
     background: rgb(249, 85, 255);
     background: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 2px;
+    margin-top: 18px;
     transition: 0.5s;
     cursor: pointer;
 
@@ -119,7 +121,7 @@ header {
 
 .descricao {
     background-color: rgba( 0, 0, 0, 0.4);
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Do Hyeon", sans-serif;
     width: 545px;
     height:fit-content;
@@ -129,7 +131,7 @@ header {
     text-align: justify;
     border-radius: 5px;
     padding: 17px;
-    margin-left: 23px;
+    margin-left: 102px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -139,7 +141,7 @@ header {
     position: absolute; 
     top: 0px;
     left: 30px;
-    margin-left: 700px;
+    margin-left: 850px;
     transition: transform 0.3s;
     animation: flutuar 4s infinite;
     transition: 0.7s;
@@ -171,7 +173,7 @@ header {
 .linha--vertical {
     left: 1px;
     padding: 17px;
-    margin-left: 138px;
+    margin-left: 218px;
     margin-top: -104px;
     position: absolute;
     z-index: 9999;
@@ -217,14 +219,15 @@ header {
     background: linear-gradient(357deg, rgba(85,208,255,1) 0%, rgba(216,116,247,1) 80%, rgba(210,74,232,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 46px;
     transition: 0.5s;
     cursor: pointer;
+    margin-left: -120px;
     
 
 }
 .titulo5 {
-    font-size: 58px;
+    font-size: 65px;
+    max-width: 300px;
     /* margin-top: 300px;
     margin-right: -35px; */
     font-family: "Do Hyeon", sans-serif;
@@ -254,9 +257,8 @@ header {
     width: 400px;
     height: fit-content;
     left: 1px;
-    text-align: right;
+    text-align: justify;
     letter-spacing: 2px;
-    text-align: left;
     padding: 0px;
     transition: 0.5s;
     cursor: pointer;
@@ -302,13 +304,14 @@ header {
     height:fit-content;
     left: 1px;
     letter-spacing: 2px;
-    text-align: left;
+    text-align: justify;
     padding: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
     margin-left: 100px;
     transition: 0.5s;
     cursor: pointer;
+    margin-left: -70px;
 }
 
 .botoes2 {
